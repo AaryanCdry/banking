@@ -1,11 +1,12 @@
 import React from 'react'
 
-const MyBanks = () => {
+const page = () => {
   return (
     <div>
-      My Banks
+      
     </div>
   )
 }
 
-export default MyBanks
+export default page
+
