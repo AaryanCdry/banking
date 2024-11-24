@@ -43,7 +43,7 @@ const AuthForm = ({ type }: { type: string }) => {
     try {
       const userData = {
         firstName: values.firstName!,
-        lastName : values.lastName!,
+        lastName: values.lastName!,
         address1: values.address1!,
         city: values.city!,
         state: values.state!,
@@ -51,9 +51,8 @@ const AuthForm = ({ type }: { type: string }) => {
         dateOfBirth: values.dateOfBirth!,
         ssn: values.ssn!,
         email: values.email,
-        password: values.password
-
-      }
+        password: values.password,
+      };
       if (type === "sign-up") {
         const newUser = await signUp(userData);
         setUser(await newUser);
@@ -206,7 +205,7 @@ const AuthForm = ({ type }: { type: string }) => {
             </Link>
           </footer>
         </>
-      )} 
+      )}
     </section>
   );
 };

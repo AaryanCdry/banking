@@ -210,4 +210,4 @@ export const authFormSchema = (type: string) => z.object({
   // both
   email: z.string().email(),
   password: z.string().min(8),
-  })
+})
